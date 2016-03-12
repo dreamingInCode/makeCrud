@@ -3,8 +3,8 @@
     "type": "library",
     "description": "Make Crud Views",
     "keywords": [
-        ":dreamingInCode",
-        ":makeCrud"
+        "dreamingInCode",
+        "makeCrud"
     ],
     "homepage": "https://github.com/dreamingInCode/makeCrud",
     "license": "MIT",
