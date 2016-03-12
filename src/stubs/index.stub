@@ -1,0 +1,16 @@
+@extends('layouts.default')
+@section('css')
+    @parent
+
+@stop
+
+@section('content')
+
+
+@stop
+
+
+@section('js')
+    @parent
+
+@stop

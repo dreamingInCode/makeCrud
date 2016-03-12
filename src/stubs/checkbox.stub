@@ -1,0 +1,5 @@
+<div class="checkbox">
+    <label>
+      <input type="checkbox" name="FIELD_NAME"> Check me out
+    </label>
+</div>

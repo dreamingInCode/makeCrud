@@ -1,0 +1,47 @@
+{
+    "name": "dreamingInCode/makeCrud",
+    "type": "library",
+    "description": "Make Crud Views",
+    "keywords": [
+        ":dreamingInCode",
+        ":makeCrud"
+    ],
+    "homepage": "https://github.com/dreamingInCode/makeCrud",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_website",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0",
+        "laravel/laravel" : "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            ":vendor\\:package_name\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            ":vendor\\:package_name\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

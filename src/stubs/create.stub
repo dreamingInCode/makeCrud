@@ -1,0 +1,22 @@
+@extends('layouts.default')
+@section('css')
+    @parent
+
+@stop
+
+@section('content')
+    <div class="col-lg-6 col-md-8">
+        {!! Form::model($MODEL_NAME, ['class'=>'form', 'route'=> '']) !!}
+            @include('_partial.blade.php')
+            <button type="submit" class="btn btn-primary">Save</button>
+        {!! Form::close() !!}
+    </div>
+
+@stop
+
+
+@section('js')
+    @parent
+
+@stop
+

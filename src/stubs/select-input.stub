@@ -1,0 +1,5 @@
+<div class="form-group">
+    <label for="FIELD_NAME">FIELD_NAME </label>
+    {!! Form::select('FIELD_NAME', $LIST, Request::old('FIELD_NAME'),  ['class'=>'form-control']) !!}
+    @if ($errors->has('FIELD_NAME')) <p class="text-danger">{{ $errors->first('FIELD_NAME') }}</p> @endif
+</div>
