@@ -1,6 +1,6 @@
 <?php
 
-namespace dreamingincode\makeCrud;
+namespace dreamingincode\makecrud;
 
 use Illuminate\Console\Command;
 

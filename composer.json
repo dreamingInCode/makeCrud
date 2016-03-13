@@ -19,7 +19,7 @@
 
     "autoload-dev": {
         "psr-4": {
-            "dreamingInCode\\makeCrud\\": "src/"
+            "dreamingInCode\\makecrud\\": "src/"
         }
     },
     "scripts": {
