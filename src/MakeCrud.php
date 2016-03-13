@@ -83,13 +83,15 @@ class MakeCrud extends Command
 
     private function createPartialForm($fields)
     {
-        $partialForm = null;
+        $partialForm = $this->getBeginningOfForm();
         $fields = $this->separateFields($fields);
         foreach ($fields as $field) {
             $f = explode(':', $field);
             $fieldType = 'make' . ucfirst(array_shift($f));
             $partialForm .= $this->$fieldType($f);
         }
+
+        $partialForm .= $this->getEndOfForm();
 
         return $partialForm;
     }
@@ -146,5 +148,16 @@ class MakeCrud extends Command
     {
         $stub = file_get_contents(__DIR__ . '/stubs/edit.stub');
         return str_replace('MODEL_NAME', $name, $stub);
+    }
+
+    private function getBeginningOfForm()
+    {
+
+        return '<div class="col-md-8 col-lg-6">'.PHP_EOL;
+    }
+
+    private function getEndOfForm()
+    {
+        return '</div>';
     }
 }
