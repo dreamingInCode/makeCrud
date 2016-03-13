@@ -150,14 +150,5 @@ class MakeCrud extends Command
         return str_replace('MODEL_NAME', $name, $stub);
     }
 
-    private function getBeginningOfForm()
-    {
 
-        return '<div class="col-md-8 col-lg-6">'.PHP_EOL;
-    }
-
-    private function getEndOfForm()
-    {
-        return '</div>';
-    }
 }

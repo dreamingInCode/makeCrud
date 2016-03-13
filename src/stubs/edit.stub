@@ -7,7 +7,7 @@
 @section('content')
     <div class="col-lg-6 col-md-8">
         {!! Form::model($MODEL_NAME, ['class'=>'form', 'route'=> ['', $MODEL_NAME->id], 'method'=>'patch']) !!}
-            @include('_partial.blade.php')
+            @include('partial._form')
         {!! Form::close() !!}
         <button type="submit" class="btn btn-primary">Update</button>
     </div>

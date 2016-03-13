@@ -5,7 +5,11 @@
 @stop
 
 @section('content')
-
+    <ul class="list-group">
+            @foreach($REPLACE as $REPLACE)
+                <li class="list-group-item "><a href="{!! route(' REPLACE .edit', $REPLACE->id) !!}" >{{ $REPLACE->name }}</li>
+            @endforeach
+        </ul>
 
 @stop
 

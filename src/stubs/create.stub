@@ -7,7 +7,7 @@
 @section('content')
     <div class="col-lg-6 col-md-8">
         {!! Form::model($MODEL_NAME, ['class'=>'form', 'route'=> '']) !!}
-            @include('_partial.blade.php')
+            @include('partial._form')
             <button type="submit" class="btn btn-primary">Save</button>
         {!! Form::close() !!}
     </div>
